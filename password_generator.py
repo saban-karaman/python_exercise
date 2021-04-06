@@ -19,8 +19,7 @@ for pass_numbers in range(0, nr_numbers):
 for pass_symbols in range(0, nr_symbols):
   random_symbols = random.choice(symbols)
   password.insert(random.randint(0, counter), random_symbols)
-you = str(password[0])
-for x in range(1, len(password)):  
-  you += str(password[x])
- 
-print(f"Here is your password : '{you}''")
+your_pass = ''
+for x in password:  
+  your_pass += x
+print(f"Here is your password : {your_pass}")
